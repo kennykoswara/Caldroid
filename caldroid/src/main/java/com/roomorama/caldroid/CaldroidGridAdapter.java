@@ -336,9 +336,7 @@ public class CaldroidGridAdapter extends BaseAdapter {
             cellView.addCustomState(CellView.STATE_DISABLED);
         }
 
-        if (holidayDatesMap.containsKey(dateTime)) cellView.addCustomState(CellView.STATE_HOLIDAY);
-        else if (timeOffDatesMap.containsKey(dateTime)) cellView.addCustomState(CellView.STATE_TIME_OFF);
-        else if (selectedDates != null && selectedDatesMap.containsKey(dateTime)) {
+        if (selectedDates != null && selectedDatesMap.containsKey(dateTime)) {
             if (selectedDatesMap.size() == 1) cellView.addCustomState(CellView.STATE_SELECTED);
             else {
                 boolean hasPrevDate = selectedDatesMap.containsKey(dateTime.minusDays(1));
@@ -349,6 +347,8 @@ public class CaldroidGridAdapter extends BaseAdapter {
                 else if (!hasPrevDate && hasNextDate) cellView.addCustomState(CellView.STATE_SELECTED_START);
             }
         }
+        else if (holidayDatesMap.containsKey(dateTime)) cellView.addCustomState(CellView.STATE_HOLIDAY);
+        else if (timeOffDatesMap.containsKey(dateTime)) cellView.addCustomState(CellView.STATE_TIME_OFF);
 
         cellView.refreshDrawableState();
 
