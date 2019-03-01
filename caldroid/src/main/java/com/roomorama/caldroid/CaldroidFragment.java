@@ -1521,7 +1521,7 @@ public class CaldroidFragment extends DialogFragment {
 
         for (int i = 0; i < 7; i++) {
             Date date = CalendarHelper.convertDateTimeToDate(nextDay);
-            list.add(fmt.format(date).toUpperCase());
+            list.add(fmt.format(date));
             nextDay = nextDay.plusDays(1);
         }
 
