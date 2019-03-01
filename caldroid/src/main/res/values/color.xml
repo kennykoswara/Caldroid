@@ -29,4 +29,6 @@
     <color name="sleekrhr_black">#212121</color>
     <color name="sleekrhr_white">#FFFFFF</color>
 
+    <color name="sleekrhr_gray">#777777</color>
+
 </resources>

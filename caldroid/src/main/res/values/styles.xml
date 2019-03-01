@@ -4,11 +4,11 @@
         <item name="styleCaldroidViewLayout">@style/CaldroidDefaultCalendarViewLayout</item>
         <item name="styleCaldroidLeftArrow">@style/CaldroidDefaultLeftButton</item>
         <item name="styleCaldroidRightArrow">@style/CaldroidDefaultRightButton</item>
-        <item name="styleCaldroidMonthName">@style/CaldroidDefaultMonthName</item>
+        <item name="styleCaldroidMonthName">@style/SleekrHRDefaultMonthName</item>
         <item name="styleCaldroidGridView">@style/SleekrHRDefaultGridView</item>
         <item name="styleCaldroidNormalCell">@style/CaldroidDefaultNormalCell</item>
         <item name="styleCaldroidSquareCell">@style/CaldroidDefaultSquareCell</item>
-        <item name="styleCaldroidWeekdayView">@style/CaldroidDefaultWeekday</item>
+        <item name="styleCaldroidWeekdayView">@style/SleekrHRDefaultWeekday</item>
     </style>
 
     <style name="CaldroidDefaultCalendarViewLayout">
@@ -32,8 +32,8 @@
         <item name="android:background">@drawable/ic_chevron_right</item>
     </style>
 
-    <style name="CaldroidDefaultMonthName">
-        <item name="android:textColor">#FF212121</item>
+    <style name="SleekrHRDefaultMonthName">
+        <item name="android:textColor">@color/sleekrhr_black</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_height">wrap_content</item>
@@ -59,7 +59,7 @@
         <item name="android:adjustViewBounds">true</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:listSelector">@null</item>
-        <item name="android:background">@color/caldroid_white</item>
+        <item name="android:background">@color/sleekrhr_white</item>
     </style>
 
     <style name="CaldroidDefaultCell">
@@ -75,8 +75,8 @@
 
     <style name="CaldroidDefaultSquareCell" parent="CaldroidDefaultCell" />
 
-    <style name="CaldroidDefaultWeekday">
-        <item name="android:textColor">#FF777777</item>
+    <style name="SleekrHRDefaultWeekday">
+        <item name="android:textColor">@color/sleekrhr_gray</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">10sp</item>
         <item name="android:paddingTop">6dp</item>
@@ -96,7 +96,7 @@
         <item name="android:background">@android:color/black</item>
     </style>
 
-    <style name="CaldroidDefaultDarkMonthName" parent="CaldroidDefaultMonthName">
+    <style name="CaldroidDefaultDarkMonthName" parent="SleekrHRDefaultMonthName">
         <item name="android:textColor">@color/caldroid_white</item>
     </style>
 

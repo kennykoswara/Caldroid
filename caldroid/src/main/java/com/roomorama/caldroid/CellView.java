@@ -82,6 +82,9 @@ public class CellView extends TextView {
             customStates.contains(STATE_SELECTED_END)) {
             setTextColor(ContextCompat.getColor(getContext(), R.color.sleekrhr_white));
         }
+        else if(customStates.contains(STATE_PREV_NEXT_MONTH)) {
+            setTextColor(ContextCompat.getColor(getContext(), R.color.sleekrhr_gray));
+        }
         else setTextColor(ContextCompat.getColor(getContext(), R.color.sleekrhr_black));
 
         super.onDraw(canvas);
