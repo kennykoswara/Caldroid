@@ -13,6 +13,8 @@
 
         <Button
             android:id="@+id/calendar_left_arrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             style="?styleCaldroidLeftArrow" />
 
         <TextView
@@ -21,6 +23,8 @@
 
         <Button
             android:id="@+id/calendar_right_arrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             style="?styleCaldroidRightArrow" />
     </LinearLayout>
 
@@ -28,7 +32,7 @@
         android:id="@+id/weekday_gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="23dp"
         android:numColumns="7"
         android:stretchMode="columnWidth" >
     </GridView>

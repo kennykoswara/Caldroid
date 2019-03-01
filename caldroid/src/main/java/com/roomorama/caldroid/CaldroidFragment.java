@@ -1107,7 +1107,7 @@ public class CaldroidFragment extends DialogFragment {
         String monthTitle = DateUtils.formatDateRange(getActivity(),
                 monthYearFormatter, millis, millis, MONTH_YEAR_FLAG).toString();
 
-        monthTitleTextView.setText(monthTitle.toUpperCase(Locale.getDefault()));
+        monthTitleTextView.setText(monthTitle);
     }
 
     /**
