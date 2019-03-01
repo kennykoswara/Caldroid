@@ -9,22 +9,25 @@
         android:id="@+id/calendar_title_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="12dp"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/calendar_left_arrow"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
             style="?styleCaldroidLeftArrow" />
 
         <TextView
             android:id="@+id/calendar_month_year_textview"
             style="?styleCaldroidMonthName"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/calendar_right_arrow"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
             style="?styleCaldroidRightArrow" />
     </LinearLayout>
 
@@ -34,7 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
         android:numColumns="7"
-        android:stretchMode="columnWidth" >
+        android:stretchMode="columnWidth"
+        android:scrollbars="none"
+        android:scrollbarThumbVertical="@android:color/transparent">
     </GridView>
 
     <com.antonyt.infiniteviewpager.InfiniteViewPager
