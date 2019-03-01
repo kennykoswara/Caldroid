@@ -37,9 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
         android:numColumns="7"
-        android:stretchMode="columnWidth"
-        android:scrollbars="none"
-        android:scrollbarThumbVertical="@android:color/transparent">
+        android:stretchMode="columnWidth">
     </GridView>
 
     <com.antonyt.infiniteviewpager.InfiniteViewPager
